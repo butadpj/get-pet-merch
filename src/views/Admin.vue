@@ -455,7 +455,7 @@ export default {
           isAvailable: fields.isAvailable === "true",
         },
       });
-      // location.reload();
+      location.reload();
     },
   },
 };
