@@ -114,7 +114,7 @@ export default {
           password: this.form.password,
         },
       });
-      document.location.href = "/";
+      location.replace("/get-pet-merch/");
     },
   },
 };

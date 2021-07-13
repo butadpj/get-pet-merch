@@ -77,7 +77,7 @@ router.beforeEach((to, from, next) => {
     if (!IS_LOGGED_IN) {
       next();
     } else {
-      next({ path: "/" });
+      next({ name: "Home" });
     }
   } else {
     next(); // does not require auth, make sure to always call next()!
