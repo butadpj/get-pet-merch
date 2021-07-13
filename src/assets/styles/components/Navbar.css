@@ -4,11 +4,33 @@
   background: var(--primary);
   color: var(--light);
   font-weight: bold;
-  padding: 1em 4em;
+  padding: 1em 6em;
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: fixed;
+}
+
+.navbar > div {
+  display: flex;
+  align-items: center;
+}
+
+.navbar > div .title {
+  margin-right: 5em;
+}
+
+.navbar a {
+  color: var(--light);
+  margin-right: 2em;
+  text-decoration: none;
+}
+
+.navbar > div .links a.active {
+  color: var(--dark);
+  background: var(--light);
+  padding: 0.3em 1.5em;
+  border-radius: 50rem;
 }
 
 .cart-info {
