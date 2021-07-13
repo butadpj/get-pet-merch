@@ -22,10 +22,8 @@ const defaultOptions = {
   httpEndpoint,
   // You can use `wss` for secure connection (recommended in production)
   // Use `null` to disable subscriptions
-  wsEndpoint:
-    process.env.VUE_APP_GRAPHQL_WS ||
-    "ws://pet-shop-platform--backend.herokuapp.com/graphql",
-  // wsEndpoint: null,
+  // wsEndpoint: process.env.VUE_APP_GRAPHQL_WS || "ws://localhost:4000/graphql",
+  wsEndpoint: null,
   // LocalStorage token
   tokenName: AUTH_TOKEN,
   // Enable Automatic Query persisting with Apollo Engine
