@@ -13,8 +13,9 @@ const AUTH_TOKEN = "apollo-token";
 
 // Http endpoint
 const httpEndpoint =
-  process.env.VUE_APP_GRAPHQL_HTTP || "http://127.0.0.1:3000/graphql";
-
+  process.env.VUE_APP_GRAPHQL_HTTP ||
+  "https://pet-shop-platform--backend.herokuapp.com/graphql";
+0
 // Config
 const defaultOptions = {
   // You can use `https` for secure connection (recommended in production)
