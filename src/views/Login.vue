@@ -74,7 +74,7 @@ export default {
           password: this.form.password,
         },
       });
-      location.replace("/");
+      location.replace("get-pet-merch/");
     },
   },
 };

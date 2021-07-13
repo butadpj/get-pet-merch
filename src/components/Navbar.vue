@@ -12,7 +12,7 @@
         <a v-if="isLoggedIn" @click="logoutUser" href="#">Logout</a>
       </div>
     </div>
-    <router-link v-if="!isLoggedIn" to="/login">Login</router-link>
+    <router-link v-if="!isLoggedIn" :to="{ name: 'Login' }">Login</router-link>
     <div class="cart-info" v-if="isLoggedIn">
       <span class="material-icons-outlined"> shopping_cart </span>
       <div class="cart-count">{{ cartCount }}</div>
@@ -49,7 +49,7 @@ export default {
           }
         `,
       });
-      location.reload("/logout");
+      location.reload("get-pet-merch/logout");
     },
   },
 };
