@@ -49,7 +49,7 @@ export default {
           }
         `,
       });
-      location.reload("get-pet-merch/logout");
+      location.reload();
     },
   },
 };

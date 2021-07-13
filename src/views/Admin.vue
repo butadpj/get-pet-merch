@@ -221,7 +221,7 @@
         </div>
         <div class="container mt-5">
           <div class="action-top">
-            <h4>Total Pet Merches: 4</h4>
+            <h4>Total Pet Merches: {{ products.length }}</h4>
             <button
               @click="handleAddPetItem"
               class="button button-primary button-icon"
